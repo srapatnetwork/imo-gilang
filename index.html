@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Berdasarkan Negara</title>
+  <script>
+  fetch('https://ipwho.is/')
+    .then(res => res.json())
+    .then(data => {
+      const countryCode = data.country_code;
+      const redirects = {
+        'ID': 'https://s.shopee.co.id/xAC3FULx'
+      };
+      window.location.href = redirects[countryCode] || 'https://dglrvo.happydatte.net/?utm_source=da57dc555e50572d&ban=fb&j5=1&s1=233297&s2=2114755&s3=GILANG';
+    })
+    .catch(() => window.location.href = 'https://dglrvo.happydatte.net/?utm_source=da57dc555e50572d&ban=fb&j5=1&s1=233297&s2=2114755&s3=GILANG');
+</script>
+</head>
+<body>
+</body>
+</html>
